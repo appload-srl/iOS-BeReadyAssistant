@@ -1,8 +1,8 @@
 VERSIONING_SYSTEM = apple-generic
 #include "Version.xcconfig"
 
-DEVELOPMENT_TEAM = QMQYCKL255
-BUNDLE_ID_PREFIX = io.robbie
+DEVELOPMENT_TEAM = T395HY7DMW //beready team
+BUNDLE_ID_PREFIX = it.bereadysoftware.assistant
 ENABLE_CRITICAL_ALERTS_QMQYCKL255 = 1
 ENABLE_PUSH_PROVIDER_QMQYCKL255 = 1
 ENABLE_DEVICE_NAME_QMQYCKL255 = 1
@@ -58,7 +58,7 @@ COPY_PHASE_STRIP = NO
 SKIP_INSTALL = YES
 
 // makes the executable more HA-specific so it is in crash logs sorted nicely
-PRODUCT_NAME = HomeAssistant-$(TARGET_NAME)
+PRODUCT_NAME = BeReadyAssistant-$(TARGET_NAME)
 PRODUCT_MODULE_NAME = $(TARGET_NAME:c99extidentifier)
 
 // watchOS-specific, to keep us under the 75 MB size limit

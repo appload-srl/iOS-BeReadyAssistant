@@ -1,6 +1,6 @@
 #include "HomeAssistant.xcconfig"
 
-CODE_SIGN_STYLE = Manual
+CODE_SIGN_STYLE = Automatic
 CODE_SIGN_IDENTITY[sdk=iphoneos*] = Apple Distribution
 CODE_SIGN_IDENTITY[sdk=watchos*] = Apple Distribution
 CODE_SIGN_IDENTITY[sdk=macosx*] = Developer ID Application

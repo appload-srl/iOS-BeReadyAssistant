@@ -1,17 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "home-assistant-wordmark-vertical-color-on-light.pdf",
-      "idiom" : "universal"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "filename" : "home-assistant-wordmark-vertical-color-on-dark.pdf",
+      "filename" : "logo-transparent 1.png",
       "idiom" : "universal"
     }
   ],
