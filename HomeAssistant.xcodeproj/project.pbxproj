@@ -1002,6 +1002,8 @@
 		5FFBC80F835393915C4748CF /* Pods_iOS_Extensions_PushProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A370326321B07E5ACE0BCB65 /* Pods_iOS_Extensions_PushProvider.framework */; };
 		65286F3B745551AD4090EE6B /* Pods-iOS-SharedTesting-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4053903E4C54A6803204286E /* Pods-iOS-SharedTesting-metadata.plist */; };
 		6D4645482E44AC0800B39211 /* GoogleService-Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D4645472E44AC0800B39211 /* GoogleService-Info-Release.plist */; };
+		6DF880DF2E44B6D800D513CE /* GoogleService-Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DF880DE2E44B6D800D513CE /* GoogleService-Info-Debug.plist */; };
+		6DF880E12E44B79F00D513CE /* GoogleService-Info-Beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DF880E02E44B79F00D513CE /* GoogleService-Info-Beta.plist */; };
 		78BE7D5D003D9F8C7486DD69 /* Pods_iOS_Shared_iOS_Tests_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4DFB087A3A43F9A526B851 /* Pods_iOS_Shared_iOS_Tests_Shared.framework */; };
 		81A0C1BBDEFF4F8C5FC314BE /* Pods_iOS_Extensions_NotificationContent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F356D0219C7F8A24234511B /* Pods_iOS_Extensions_NotificationContent.framework */; };
 		84F7755EFB03C3F463292ABF /* Pods-watchOS-Shared-watchOS-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B55CB9064A0477C9F456B6A /* Pods-watchOS-Shared-watchOS-metadata.plist */; };
@@ -2292,6 +2294,8 @@
 		6B55CB9064A0477C9F456B6A /* Pods-watchOS-Shared-watchOS-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-watchOS-Shared-watchOS-metadata.plist"; path = "Pods/Pods-watchOS-Shared-watchOS-metadata.plist"; sourceTree = "<group>"; };
 		6CB9BB87D256D071215B4FF4 /* Pods-iOS-Extensions-PushProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Extensions-PushProvider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Extensions-PushProvider/Pods-iOS-Extensions-PushProvider.debug.xcconfig"; sourceTree = "<group>"; };
 		6D4645472E44AC0800B39211 /* GoogleService-Info-Release.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Release.plist"; sourceTree = "<group>"; };
+		6DF880DE2E44B6D800D513CE /* GoogleService-Info-Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Debug.plist"; sourceTree = "<group>"; };
+		6DF880E02E44B79F00D513CE /* GoogleService-Info-Beta.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Beta.plist"; sourceTree = "<group>"; };
 		6F1D92E4B7A5CD1007EB0782 /* Pods_watchOS_Shared_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_watchOS_Shared_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7150FCF154251F240E33FF76 /* Pods-iOS-Extensions-NotificationContent.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Extensions-NotificationContent.beta.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Extensions-NotificationContent/Pods-iOS-Extensions-NotificationContent.beta.xcconfig"; sourceTree = "<group>"; };
 		755DF7AFFAA21F6CE428E998 /* Pods-watchOS-WatchExtension-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS-WatchExtension-Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS-WatchExtension-Watch/Pods-watchOS-WatchExtension-Watch.release.xcconfig"; sourceTree = "<group>"; };
@@ -2487,8 +2491,6 @@
 		B657A90B1CA646EB00121384 /* HomeAssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssistantUITests.swift; sourceTree = "<group>"; };
 		B657A90D1CA646EB00121384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B657A9191CA647C500121384 /* HAAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HAAPI.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		B658AA7222506AD400C9BFE3 /* GoogleService-Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Debug.plist"; sourceTree = "<group>"; };
-		B658AA7622506DAF00C9BFE3 /* GoogleService-Info-Beta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Beta.plist"; sourceTree = "<group>"; };
 		B658AA7C2250B25D00C9BFE3 /* MobileAppUpdateRegistrationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileAppUpdateRegistrationRequest.swift; sourceTree = "<group>"; };
 		B65B15042273188300635D5C /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		B65C0B512282BA13007E057B /* NotificationSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsViewController.swift; sourceTree = "<group>"; };
@@ -5309,8 +5311,8 @@
 			children = (
 				420B100B2B1D204400D383D8 /* Assets.xcassets */,
 				B672AB552216B07500175465 /* gallery.ckcomplication */,
-				B658AA7622506DAF00C9BFE3 /* GoogleService-Info-Beta.plist */,
-				B658AA7222506AD400C9BFE3 /* GoogleService-Info-Debug.plist */,
+				6DF880E02E44B79F00D513CE /* GoogleService-Info-Beta.plist */,
+				6DF880DE2E44B6D800D513CE /* GoogleService-Info-Debug.plist */,
 				6D4645472E44AC0800B39211 /* GoogleService-Info-Release.plist */,
 				B657A8F71CA646EB00121384 /* Info.plist */,
 				4278DFAF2B45C6680087C9D7 /* Core.strings */,
@@ -6401,7 +6403,9 @@
 				B606160E1D1F117700249C11 /* US-EN-Morgan-Freeman-Basement-Door-Closed.wav in Resources */,
 				B60616B61D1F117800249C11 /* US-EN-Daisy-Laundry-Room-Leak.wav in Resources */,
 				B60616861D1F117700249C11 /* US-EN-Alexa-Good-Night.wav in Resources */,
+				6DF880DF2E44B6D800D513CE /* GoogleService-Info-Debug.plist in Resources */,
 				B672AB562216B07500175465 /* gallery.ckcomplication in Resources */,
+				6DF880E12E44B79F00D513CE /* GoogleService-Info-Beta.plist in Resources */,
 				B60616221D1F117700249C11 /* US-EN-Morgan-Freeman-Motion-Detected.wav in Resources */,
 				B606163B1D1F117700249C11 /* US-EN-Morgan-Freeman-Starting-Party-Mode.wav in Resources */,
 				B606168B1D1F117700249C11 /* US-EN-Alexa-Motion-Detected-Generic.wav in Resources */,
