@@ -5,17 +5,14 @@ project 'HomeAssistant', 'Debug' => :debug, 'Release' => :release, 'Beta' => :re
 
 def support_modules
   pod 'SwiftGen', '~> 6.5.0'
-  pod 'SwiftLint', '0.54.0' # also update ci.yml GHA
-  pod 'SwiftFormat/CLI', '0.53.1' # also update ci.yml GHA
+  pod 'SwiftLint', '0.54.0'
+  pod 'SwiftFormat/CLI', '0.53.1'
 end
 
 if ENV['ONLY_SUPPORT_MODULES']
-  # some of our CI scripts only need e.g. SwiftLint
-  # this allows us to skip a lot of installation when unnecessary
   platform :ios, '15.0'
   support_modules
   workspace 'abstract.workspace'
-
   return self # rubocop:disable Lint/TopLevelReturnWithArgument
 end
 
@@ -29,13 +26,14 @@ pod 'PromiseKit', '~> 8.1.1'
 pod 'Improv-iOS', '~> 0.0.6'
 pod 'SFSafeSymbols', '~> 5.3'
 
-pod 'RealmSwift'
+# ✅ Versione aggiornata per Privacy Manifest
+pod 'RealmSwift', '>= 10.43.0'
 pod 'GRDB.swift', git: 'https://github.com/groue/GRDB.swift.git', tag: 'v7.0.0'
 pod 'UIColor_Hex_Swift'
 pod 'Version'
 pod 'XCGLogger'
 
-# Keep Starscream reference even though HAKit already install it, because it defines our fork with the necessary fix
+# Starscream incluso direttamente con fork
 pod 'Starscream', git: 'https://github.com/bgoncal/starscream', branch: 'ha-URLSession-fix'
 pod 'HAKit', git: 'https://github.com/home-assistant/HAKit.git', tag: '0.4.4'
 pod 'HAKit/PromiseKit', git: 'https://github.com/home-assistant/HAKit.git', tag: '0.4.4'
@@ -52,10 +50,10 @@ end
 abstract_target 'iOS' do
   platform :ios, '15.0'
 
+  # ✅ Versione aggiornata per Privacy Manifest
   pod 'MBProgressHUD', '~> 1.2.0'
-  pod 'ReachabilitySwift'
+  pod 'ReachabilitySwift', '>= 5.1.0'
 
-  # fixes newer cocoapods search path issues for Clibsodium build failures
   shared_fwk_pods
 
   target 'Shared-iOS' do
@@ -75,7 +73,8 @@ abstract_target 'iOS' do
     pod 'CPDAcknowledgements', git: 'https://github.com/CocoaPods/CPDAcknowledgements', branch: 'master'
     pod 'Eureka', git: 'https://github.com/xmartlabs/Eureka', branch: 'master'
 
-    pod 'FirebaseMessaging'
+    # ✅ Versione aggiornata per Privacy Manifest
+    pod 'FirebaseMessaging', '>= 10.17.0'
 
     pod 'SwiftMessages', '~> 10.0.1'
     pod 'ViewRow', git: 'https://github.com/EurekaCommunity/ViewRow', branch: 'master'
@@ -93,7 +92,6 @@ abstract_target 'iOS' do
   target 'Extensions-Matter'
   target 'Extensions-NotificationContent'
   target 'Extensions-NotificationService'
-  target 'Extensions-PushProvider'
   target 'Extensions-Share'
   target 'Extensions-Widgets'
 end
@@ -104,7 +102,6 @@ abstract_target 'watchOS' do
   target 'Shared-watchOS' do
     shared_fwk_pods
   end
-
 end
 
 post_install do |installer|
@@ -114,25 +111,17 @@ post_install do |installer|
       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
 
       config.build_settings['SWIFT_INSTALL_OBJC_HEADER'] = 'NO' unless target.name.include? 'Firebase'
-
-      # disabled arch to stay under the 75 MB limit imposed by apple
       config.build_settings['EXCLUDED_ARCHS[sdk=watchos*]'] = 'arm64'
 
       next unless config.name == 'Release'
-
-      # cocoapods defaults to not stripping the frameworks it creates
       config.build_settings['STRIP_INSTALLED_PRODUCT'] = 'YES'
     end
 
-    # Fix bundle targets' 'Signing Certificate' to 'Sign to Run Locally'
-    # (catalyst fix)
-    # rubocop:disable Style/Next
     if target.respond_to?(:product_type) && (target.product_type == 'com.apple.product-type.bundle')
       target.build_configurations.each do |config|
         config.build_settings['CODE_SIGN_IDENTITY[sdk=macosx*]'] = '-'
         config.build_settings['CODE_SIGNING_ALLOWED[sdk=iphoneos*]'] = 'NO'
       end
     end
-    # rubocop:enable Style/Next
   end
 end
