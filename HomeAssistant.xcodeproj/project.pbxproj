@@ -345,10 +345,6 @@
 		11B7FD742493225200E60ED9 /* BackgroundTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B7FD732493225200E60ED9 /* BackgroundTask.swift */; };
 		11B7FD752493225200E60ED9 /* BackgroundTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B7FD732493225200E60ED9 /* BackgroundTask.swift */; };
 		11B7FD772493232400E60ED9 /* BackgroundTask.test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B7FD762493232400E60ED9 /* BackgroundTask.test.swift */; };
-		11B9290B266F145000786588 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B9290A266F145000786588 /* NetworkExtension.framework */; };
-		11B92913266F145000786588 /* BeReadyAssistant-Extensions-PushProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11B92909266F145000786588 /* BeReadyAssistant-Extensions-PushProvider.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		11B9297E266F15B500786588 /* PushProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B9296B266F15A800786588 /* PushProvider.swift */; };
-		11B92A5B266F17AA00786588 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03D891720E0A85200D4F28D /* Shared.framework */; };
 		11B92AF2266F23DA00786588 /* NotificationManagerLocalPushInterfaceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B92A7F266F23CD00786588 /* NotificationManagerLocalPushInterfaceExtension.swift */; };
 		11BA5EC92759AC0300FC40E8 /* XCGLogger+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA5EC82759AC0300FC40E8 /* XCGLogger+Export.swift */; };
 		11BA5ECA2759AC0300FC40E8 /* XCGLogger+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA5EC82759AC0300FC40E8 /* XCGLogger+Export.swift */; };
@@ -472,7 +468,6 @@
 		1A0BF50187A921289B3BA4AE /* Pods-Tests-App-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67C3F1DA02199833DA64AF8 /* Pods-Tests-App-metadata.plist */; };
 		20226C5AB77E1229852ADDC8 /* Pods_iOS_Extensions_Widgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27653D385E4CEB58E52A350 /* Pods_iOS_Extensions_Widgets.framework */; };
 		237993F7E11DC585E29EDC7C /* Pods-iOS-Extensions-NotificationService-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 592EED7A6C2444872F11C17B /* Pods-iOS-Extensions-NotificationService-metadata.plist */; };
-		2F50FC61669812D485E608EC /* Pods-iOS-Extensions-PushProvider-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3D5CF14402325076CA105EB /* Pods-iOS-Extensions-PushProvider-metadata.plist */; };
 		38A4EBA18ADEEE555AD14F52 /* Pods-iOS-App-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 553A33E097387AA44265DB13 /* Pods-iOS-App-metadata.plist */; };
 		3997926A2B7F904A00231B54 /* MobileAppConfigPushCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399792692B7F904A00231B54 /* MobileAppConfigPushCategory.swift */; };
 		3997926B2B7F904A00231B54 /* MobileAppConfigPushCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399792692B7F904A00231B54 /* MobileAppConfigPushCategory.swift */; };
@@ -999,7 +994,6 @@
 		491E990025D543560077BBE3 /* LogbookEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E98FE25D543560077BBE3 /* LogbookEntry.swift */; };
 		539AA1653F4BCDB61FE7C696 /* Pods_iOS_Shared_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213EF66D14F92AF8BF2E9E98 /* Pods_iOS_Shared_iOS.framework */; };
 		5B715903CB3450FE351399BC /* Pods-iOS-Extensions-Share-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 207E35C8F1554A9AD616FFA2 /* Pods-iOS-Extensions-Share-metadata.plist */; };
-		5FFBC80F835393915C4748CF /* Pods_iOS_Extensions_PushProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A370326321B07E5ACE0BCB65 /* Pods_iOS_Extensions_PushProvider.framework */; };
 		65286F3B745551AD4090EE6B /* Pods-iOS-SharedTesting-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4053903E4C54A6803204286E /* Pods-iOS-SharedTesting-metadata.plist */; };
 		6D4645482E44AC0800B39211 /* GoogleService-Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D4645472E44AC0800B39211 /* GoogleService-Info-Release.plist */; };
 		6DF880DF2E44B6D800D513CE /* GoogleService-Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DF880DE2E44B6D800D513CE /* GoogleService-Info-Debug.plist */; };
@@ -1374,20 +1368,6 @@
 			remoteGlobalIDString = D03D891620E0A85200D4F28D;
 			remoteInfo = "Shared-iOS";
 		};
-		11B92911266F145000786588 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B657A8DE1CA646EB00121384 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 11B92908266F145000786588;
-			remoteInfo = PushProvider;
-		};
-		11B92A5D266F17AA00786588 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B657A8DE1CA646EB00121384 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D03D891620E0A85200D4F28D;
-			remoteInfo = "Shared-iOS";
-		};
 		11DE9F9725B6173D0081C0ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B657A8DE1CA646EB00121384 /* Project object */;
@@ -1530,7 +1510,6 @@
 			files = (
 				1155DD10250F4101003405C0 /* BeReadyAssistant-Extensions-Share.appex in Embed App Extensions */,
 				B6AAD7A81D827DD40090B220 /* BeReadyAssistant-Extensions-NotificationService.appex in Embed App Extensions */,
-				11B92913266F145000786588 /* BeReadyAssistant-Extensions-PushProvider.appex in Embed App Extensions */,
 				B627CB151D83C87B0057173E /* BeReadyAssistant-Extensions-NotificationContent.appex in Embed App Extensions */,
 				1171507624DFCDEE0065E874 /* BeReadyAssistant-Extensions-Widgets.appex in Embed App Extensions */,
 				11B6B5822948F8E100B8B552 /* BeReadyAssistant-Extensions-Matter.appex in Embed App Extensions */,
@@ -1788,7 +1767,6 @@
 		11B7DC1E266C5D3E0090BD3B /* LocalPushManager.test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushManager.test.swift; sourceTree = "<group>"; };
 		11B7FD732493225200E60ED9 /* BackgroundTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTask.swift; sourceTree = "<group>"; };
 		11B7FD762493232400E60ED9 /* BackgroundTask.test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTask.test.swift; sourceTree = "<group>"; };
-		11B92909266F145000786588 /* BeReadyAssistant-Extensions-PushProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BeReadyAssistant-Extensions-PushProvider.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B9290A266F145000786588 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		11B9296A266F15A800786588 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11B9296B266F15A800786588 /* PushProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushProvider.swift; sourceTree = "<group>"; };
@@ -2664,16 +2642,6 @@
 			files = (
 				07B254BADB23F6A60E82D615 /* Pods_iOS_Extensions_Matter.framework in Frameworks */,
 				11B6B59429497C5800B8B552 /* Shared.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11B92906266F145000786588 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11B9290B266F145000786588 /* NetworkExtension.framework in Frameworks */,
-				11B92A5B266F17AA00786588 /* Shared.framework in Frameworks */,
-				5FFBC80F835393915C4748CF /* Pods_iOS_Extensions_PushProvider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5139,7 +5107,6 @@
 				1155DD06250F4100003405C0 /* BeReadyAssistant-Extensions-Share.appex */,
 				1167402225198F9A00F51626 /* MacBridge.bundle */,
 				11DE9D8325B6103C0081C0ED /* Home Assistant Launcher.app */,
-				11B92909266F145000786588 /* BeReadyAssistant-Extensions-PushProvider.appex */,
 				11B6B57B2948F8E100B8B552 /* BeReadyAssistant-Extensions-Matter.appex */,
 				46C62B882D8A3687002C0001 /* SharedTesting.framework */,
 			);
@@ -5841,25 +5808,6 @@
 			productReference = 11B6B57B2948F8E100B8B552 /* BeReadyAssistant-Extensions-Matter.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		11B92908266F145000786588 /* Extensions-PushProvider */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 11B92917266F145000786588 /* Build configuration list for PBXNativeTarget "Extensions-PushProvider" */;
-			buildPhases = (
-				53D3FBBE96A99C3DA7040194 /* [CP] Check Pods Manifest.lock */,
-				11B92905266F145000786588 /* Sources */,
-				11B92906266F145000786588 /* Frameworks */,
-				11B92907266F145000786588 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				11B92A5E266F17AA00786588 /* PBXTargetDependency */,
-			);
-			name = "Extensions-PushProvider";
-			productName = PushProvider;
-			productReference = 11B92909266F145000786588 /* BeReadyAssistant-Extensions-PushProvider.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		11DE9D8225B6103C0081C0ED /* Launcher */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11DE9D9325B6103D0081C0ED /* Build configuration list for PBXNativeTarget "Launcher" */;
@@ -5932,7 +5880,6 @@
 				B6AAD7AC1D827DD40090B220 /* Embed App Extensions */,
 				B6CC5DA62159D10F00833E5D /* Embed Watch Content */,
 				11DE9FBD25B6184E0081C0ED /* Embed Mac Launcher */,
-				9C08D123229F187E001B4F73 /* Enable Special Entitlements */,
 				8A763BD9E9F25F0704269545 /* [CP] Embed Pods Frameworks */,
 				110EC9FF251708D5009C9A1B /* Embed Frameworks */,
 				429FB0412DC0D729000E3372 /* Swiftlint */,
@@ -5947,7 +5894,6 @@
 				1155DD0F250F4101003405C0 /* PBXTargetDependency */,
 				1171507524DFCDEE0065E874 /* PBXTargetDependency */,
 				11DE9F9825B6173D0081C0ED /* PBXTargetDependency */,
-				11B92912266F145000786588 /* PBXTargetDependency */,
 				11B6B5812948F8E100B8B552 /* PBXTargetDependency */,
 			);
 			name = App;
@@ -6147,9 +6093,6 @@
 					11B6B57A2948F8E100B8B552 = {
 						CreatedOnToolsVersion = 14.1;
 					};
-					11B92908266F145000786588 = {
-						CreatedOnToolsVersion = 12.4;
-					};
 					11DE9D8225B6103C0081C0ED = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -6319,7 +6262,6 @@
 				11B6B57A2948F8E100B8B552 /* Extensions-Matter */,
 				B6AAD7A01D827DD40090B220 /* Extensions-NotificationService */,
 				B627CB061D83C87B0057173E /* Extensions-NotificationContent */,
-				11B92908266F145000786588 /* Extensions-PushProvider */,
 				1155DD05250F4100003405C0 /* Extensions-Share */,
 				1171506824DFCDE60065E874 /* Extensions-Widgets */,
 			);
@@ -6358,14 +6300,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5A3C1932BE1F4A40EA78754 /* Pods-iOS-Extensions-Matter-metadata.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11B92907266F145000786588 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F50FC61669812D485E608EC /* Pods-iOS-Extensions-PushProvider-metadata.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6881,28 +6815,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${SRCROOT}/Tools/BuildMaterialDesignIconsFont.sh\n";
 		};
-		53D3FBBE96A99C3DA7040194 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iOS-Extensions-PushProvider-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6B47CD8F0AAF5C691F8256D7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -7010,26 +6922,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C08D123229F187E001B4F73 /* Enable Special Entitlements */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Enable Special Entitlements";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/bin/sh -e";
-			shellScript = "exec Configuration/Entitlements/activate_special_entitlements.sh\n";
 			showEnvVarsInLog = 0;
 		};
 		A5454BBB454523C55D2DF2E3 /* [CP] Check Pods Manifest.lock */ = {
@@ -7244,14 +7136,6 @@
 			files = (
 				11B6B58E2949002000B8B552 /* HATypedRequest+Matter.swift in Sources */,
 				11B6B58C2948FB4B00B8B552 /* MatterRequestHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11B92905266F145000786588 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11B9297E266F15B500786588 /* PushProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8316,17 +8200,6 @@
 			target = D03D891620E0A85200D4F28D /* Shared-iOS */;
 			targetProxy = 11B6B59629497C5800B8B552 /* PBXContainerItemProxy */;
 		};
-		11B92912266F145000786588 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = 11B92908266F145000786588 /* Extensions-PushProvider */;
-			targetProxy = 11B92911266F145000786588 /* PBXContainerItemProxy */;
-		};
-		11B92A5E266F17AA00786588 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D03D891620E0A85200D4F28D /* Shared-iOS */;
-			targetProxy = 11B92A5D266F17AA00786588 /* PBXContainerItemProxy */;
-		};
 		11DE9F9825B6173D0081C0ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			platformFilter = maccatalyst;
@@ -8705,42 +8578,6 @@
 			};
 			name = Beta;
 		};
-		11B92914266F145000786588 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB9BB87D256D071215B4FF4 /* Pods-iOS-Extensions-PushProvider.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				ENABLE_PUSH_PROVIDER_QMQYCKL255 = 0;
-				INFOPLIST_FILE = Sources/Extensions/PushProvider/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				PROVISIONING_SUFFIX = .PushProvider;
-			};
-			name = Debug;
-		};
-		11B92915266F145000786588 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 574F428FD5AD613411644AE4 /* Pods-iOS-Extensions-PushProvider.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				ENABLE_PUSH_PROVIDER_QMQYCKL255 = 0;
-				INFOPLIST_FILE = Sources/Extensions/PushProvider/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				PROVISIONING_SUFFIX = .PushProvider;
-			};
-			name = Release;
-		};
-		11B92916266F145000786588 /* Beta */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0954F3919DBD03AC16B0391 /* Pods-iOS-Extensions-PushProvider.beta.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				ENABLE_PUSH_PROVIDER_QMQYCKL255 = 0;
-				INFOPLIST_FILE = Sources/Extensions/PushProvider/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				PROVISIONING_SUFFIX = .PushProvider;
-			};
-			name = Beta;
-		};
 		11DE9D9025B6103D0081C0ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9032,6 +8869,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2025.9.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -9244,6 +9082,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2025.9.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -9291,6 +9130,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2025.9.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -9702,16 +9542,6 @@
 				11B6B5832948F8E100B8B552 /* Debug */,
 				11B6B5842948F8E100B8B552 /* Release */,
 				11B6B5852948F8E100B8B552 /* Beta */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		11B92917266F145000786588 /* Build configuration list for PBXNativeTarget "Extensions-PushProvider" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				11B92914266F145000786588 /* Debug */,
-				11B92915266F145000786588 /* Release */,
-				11B92916266F145000786588 /* Beta */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
